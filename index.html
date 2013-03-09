@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <script></script>
+  
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+<!--
+  <meta name="viewport"
+ content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+-->
+  <title>Support SwingSign</title>
+
+  
+</head><body>
+iOS Application for iPad<br>
+
+<div style="text-align: center;"><big><big><big><img style="width: 57px; height: 57px;" alt="App Icon" src="icon.png" align="top">&nbsp;&nbsp;&nbsp; <big>SwingSign</big></big></big></big><br>
+</div>
+
+<br>
+
+<center>
+<a name="japanese_start"></a><big>---&lt; 日本語 &gt;---<span style="font-weight: bold;">（In English <a href="#english_start">HERE</a>）
+</span></big></center>
+<br>
+<big>SwingSign（スウィングサイン）は、コンサートやスポーツ観戦などでの応援メッセージ等に使えるサインボー
+ドのアプリです。<br>
+自分でデザインしたサインをiPadの画面の３倍の大きさで空中に表示できます。<br>
+仕組みは、iPadを一定のテンポで左右に扇状に振る（スウィングする）と、そのテンポに同調してサインの表示部分をiPadと逆方向に移動して表示する
+ことにより、残像として、空中にサインが停止して見えます。<br>
+まずは、次のデモ動画を見て下さい。<br>
+</big><br>
+
+<div style="text-align: center;"><!--
+<iframe src="http://www.youtube.com/embed/GwudK3obdYQ"
+ allowfullscreen="" frameborder="0" height="315" width="420">
+--><iframe src="http://www.youtube.com/embed/GwudK3obdYQ" allowfullscreen="" frameborder="0" height="480" width="640">&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;/body&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;/html&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;
+</iframe><big><br>
+</big></div>
+<br><br>
+<h2>
+Ver 2.0 追加機能
+</h2>
+（※2013年1月1日にAppStoreへバージョンアップ版が公開されました）<br>
+<h3>【ジャイロセンサー対応】（初代iPadは除く）</h3>
+<big>
+<p style="margin-left: 30px">
+Ver 1.0では、加速度センサーのみに対応していました。
+加速度センサーでは、スウィングした両端で、重力以外に、方向変換のための加速度がかかるため、実際の見た目の傾きを求めるのは困難でした。
+そのため、加速度が変化するタイミングからスウィングの往復周期（時間）を求めて、それに合わせて、表示をずらしていました。
+したがって、常に一定のテンポで左右にスウィングし続ける必要がありました。
+この振るテンポを変えてしまうと、表示の動きと同期がとれなくなり、サインが空中に止まって見えなくなりました。<br>
+
+iPad2からジャイロセンサーが装備されたので、Ver 2.0から、加速度センサーの替わりに、そのジャイロセンサーを使うことも可能にしました。
+ジャイロ使用では、iPad本体を垂直に起こした時の方向が基準となり、そこからの傾きがリアルタイムに表示のずれに反映されます。
+したがって、スウィングの往復周期（時間）を事前に求める必要がなくなり、途中でテンポを変えても、表示のずれは同期し、空中に止まって見え続けるようになりました。<br>
+以下のテンポが途中で変化する場面における使用センサーの比較デモでその違いを確認してください。<br>
+（※BGMに合わせて振っているので、音声もお聴き下さい）<br>
+<br>
+従来の加速度センサーを使った場合：
+</p>
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/Q0WIANFKSUI" frameborder="0" allowfullscreen></iframe>
+</div>
+<br>
+<p style="margin-left: 30px">
+ジャイロセンサーを使った場合：
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/uz22YQBqVB4" frameborder="0" allowfullscreen></iframe>
+</div>
+</p>
+
+<h3>【横回しスタイルの追加】（初代iPadは除く）</h3>
+<p style="margin-left: 30px">
+ジャイロセンサーを使った場合、iPadを垂直に起こした状態で、画面が向いている水平の回転方向の変化も感知できます。
+これを使って、腕をのばした状態で水平に左右に振ることにより、長方形の範囲に書いたサインを水平に広げて表示することができる機能を追加しました。<br>
+従来のスタイルを「扇型」スタイル、新しいのを「横回し」スタイルと呼びます。<br>
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/QlVWZwIOknc" frameborder="0" allowfullscreen></iframe>
+</div>
+<p style="margin-left: 30px">
+長方形の領域なので、絵を描いて見せることも容易にできます。
+</p>
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/9PovO_Gzt7U" frameborder="0" allowfullscreen></iframe>
+</div>
+<p style="margin-left: 30px">
+スウィングする回転半径が調整できるようにしたので、このようなパフォーマンス（宴会芸？）もアイデア次第。
+</p>
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/0MU9slhU5SA" frameborder="0" allowfullscreen></iframe>
+</div>
+</big>
+
+<big>
+<br>
+</big>
+<!-- AppStore button -->
+<div class="widget">
+<div class="textwidget"><big><!--
+<a
+ href="http://itunes.apple.com/app/swingsign/id471960253?l=ja&amp;ls=1&amp;mt=8"
+ target="itunes_store">
+--><a href="http://itunes.apple.com/jp/app/id471960253?ls=1&amp;mt=8" target="itunes_store="><img src="http://ax.phobos.apple.com.edgesuite.net/images/web/linkmaker/badge_appstore-lrg.gif" alt="SwingSign - Sign board App for iPad -" style="border: 0pt none ;"></a></big></div>
+</div>
+
+<!-- Tweet button (J) -->
+<big><br>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="SwingSign(スウィングサイン) 〜 空中サインボードのiPadアプリ 〜" data-count="horizontal" data-via="info_swingsign" data-lang="ja">ツイート</a>
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></big><br>
+
+<!-- follow button (E) -->
+<a href="https://twitter.com/info_swingsign" class="twitter-follow-button" data-lang="ja">@info_swingsignをフォロー</a>
+<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+<br><br>
+<center>
+<a name="english_start"></a><big>
+---&lt; In English &gt;---
+<!--
+（日本語は<a href="#japanese_start">こちら</a>）
+-->
+</big></center>
+<br>
+<!--
+<big><span style="font-weight: bold;"><span style="font-weight: bold;"><br>
+</span></span>
+</big>
+-->
+<big><big>"SwingSign" is a App of a sign(message)
+board for a
+concert or a sports event etc.<br>
+The App can show a sign you designed in midair virtually three times as
+large as iPad's display size.<br>
+You swing your iPad sideways keeping constat tempo,&nbsp; then the App
+synchronizing with the tempo, moves a showing part of the sign in the
+opposite direction of the swing.<br>
+So, as afterimage, the large sign seems to have stopped in midair.<br>
+First of all, see the demo video below!<br>
+<br>
+</big>
+<big><br>
+</big>
+</big><!-- YouTube video -->
+<div style="text-align: center;"><big><big><iframe src="http://www.youtube.com/embed/9e5gt_ry3v4" allowfullscreen="" frameborder="0" height="480" width="640"></iframe></big><br>
+</big></div>
+
+<br><br>
+<h2>
+Ver 2.0 Additional Functions
+</h2>
+（※ January 1st, 2013, We released Ver 2.0 to the AppStore）<br>
+<h3>【Using Gyroscope】(Except the First iPad)</h3>
+<big>
+<p style="margin-left: 30px">
+Using gyroscope sensor (provided from iPad2)、though the tempo is not constantly same, the sign is seem to see stopped in the midair.
+<br>
+（※For swinging in time to the BGM, please listen to it with these videos）<br>
+<br>
+In case using Accelerometer (same as Ver 1.0)：
+</p>
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/vWk_A3cvIEg" frameborder="0" allowfullscreen></iframe>
+</div>
+<br>
+<p style="margin-left: 30px">
+In case using Gyroscope sensor (new function)：
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/9loRXy-9-Fw" frameborder="0" allowfullscreen></iframe>
+</div>
+</p>
+
+<h3>【Twist side style】(Except the First iPad)</h3>
+<p style="margin-left: 30px">
+We release new another swing style; twist side style, beside former fan-shaped style.
+<br>
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/QlVWZwIOknc" frameborder="0" allowfullscreen></iframe>
+</div>
+<p style="margin-left: 30px">
+Drawing area is square, so, you can draw picture, too.<br>
+And display it on a part of cylinder surface</p>
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/9PovO_Gzt7U" frameborder="0" allowfullscreen></iframe>
+</div>
+<p style="margin-left: 30px">
+Now, you can adjust radius of swing.<br>
+So, you can give such (foolish?) performance.
+Try your idea!</p>
+<div style="text-align: center;">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/0MU9slhU5SA" frameborder="0" allowfullscreen></iframe>
+</div>
+</big>
+
+<span style="font-weight: bold;"> <span style="font-weight: bold;"></span>
+<big><br>
+</big></span>
+<!-- AppStore button -->
+<div class="widget">
+<div class="textwidget"><big> <a href="http://itunes.apple.com/app/swingsign/id471960253?ls=1&amp;mt=8" target="itunes_store"><img src="http://ax.phobos.apple.com.edgesuite.net/images/web/linkmaker/badge_appstore-lrg.gif" alt="SwingSign - Sign board App for iPad -" style="border: 0pt none ;"></a></big></div>
+</div>
+
+<!-- Tweet button (E) -->
+<big><br>
+</big><a href="https://twitter.com/share" class="twitter-share-button" data-text="SwingSign - In Midair Signboard App for iPad -" data-count="horizontal" data-via="info_swingsign">Tweet</a>
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script><br>
+
+<!-- follow button (E) -->
+<a href="https://twitter.com/info_swingsign" class="twitter-follow-button" data-lang="en">follow @info_swingsign</a>
+<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script><br>
+
+<br>
+
+<br>
+
+
+</body></html>

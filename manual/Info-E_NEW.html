@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>How to use SwingSign</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.36">
+<!--
+  <style type="text/css">
+    body {background-color: #004f8e}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff; min-height: 18.0px}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'; color: #ffffff}
+    span.s1 {font: 12.0px 'Lucida Grande'}
+    span.s2 {text-decoration: line-through}
+    span.s3 {font: 12.0px 'Lucida Grande'; text-decoration: line-through}
+    ol.ol1 {list-style-type: decimal}
+    ul.ul1 {list-style-type: hyphen}
+  </style>
+-->
+<link rel="stylesheet" type="text/css" href="Info.css">
+</head>
+<body>
+<!--
+    <p class="p1">SwingSign　取説　下書き</p>
+<p class="p2"><br></p>
+<ol class="ol1">
+  <li class="li1">免責事項</li>
+ -->
+	<h1>
+		How to Use SwingSign
+	</h1>
+	   <ol class="ol1" style="color: pink">
+    <big>*** Attention ***</big><br>
+    At the present time, this guide is same as one of Ver 1.0. Additional functions of Ver 2.0 are not described here.<br>
+    Additional functions are explaned at <a href="http://tomo3.sakura.ne.jp/swingsign/#english_start">the support site</a> by some videos as announcement. For the present, refer them.<br>
+    This guide was displayed by this app accessing the documents at our web site. About additional functions, we will describe them in a few day, and replace them. No need to upgarade this App. [written Dec 30th 2012]
+       </ol>
+   
+
+	<h2>
+		[ Matters that Require Attention, Escape Clause ]
+	</h2>
+	<p>
+    This application display a large sign by swinging a iPad (include iPad2, or its follows) body itself.
+    So, as doing that action, in your mistake, you may drop the iPad and it may be broken.
+    But we shall not responsible for its loss.<br>
+    And neither, by that action, when you make some damage to something or some one around you, we shall not responsible for its loss.<br>
+    So, you need an attention to avoid those troubles.
+    And as you think to use this application in like a concert hall, the hall may not allow you to used iPad or these kind of sign board.<br>
+   Which you can used this application or not follow a indication of the hall's staff.<br>
+    We shall not responsible for any loss that occurred as you use this application under any circumstances.
+	</p>
+	<h2>
+		[Basics]
+	</h2>
+  <ol class="ol1">
+    <ul class="ul1">
+      <li class="li1">If you have not seen, see the demo video at <a href="http://tomo3.sakura.ne.jp/swingsign/#english_start">the support site</a>.</li>
+    </ul>
+    <li class="li1">preparation</li>
+    <ul class="ul1">
+      <li class="li1">For the sign is seen clearly,
+          maximize a brightness setting as follows.</li>
+      <ul class="ul1">
+        <li class="li1">Double-click the Home button.</li>
+          <li class="li1">Swipe to the right over the history list at the bottom.</li>
+          <li class="li1">Drag the brightness slider<img src="brightnessController.png">to the max volume.
+</li>
+      </ul>
+    </ul>
+    <li class="li1">Design a Sign</li>
+    <ul class="ul1">
+      <li class="li1">Set by tapping "Pen Color", "Line Cap &amp; Join", and "Line Width", draw a sign in a fan-shaped area by drags.</li>
+      <li class="li1">You can change properties of these lines by one stroke (a line begin from touch down, and drag, end to touch up).</li>
+      <li class="li1">You can erase the last stroke and back to the previous state by tapping the "Undo" button.</li>
+      <li class="li1">You can erase everything you drew by tapping the "Clear" button.</li>
+    </ul>
+    <li class="li1">Test the "Swing Display" of a Sign</li>
+      <p>At this point, for understanding the principle and the usage of this application, hold a iPad and face the display side to you, and swing it.<br>
+      After you understand them, at the next paragraph, turn the iPad display to the person you want to show the sign, and swing it .</p>
+      <ul class="ul1">
+      <li class="li1">Tap the "Display" button, hold the iPad as portrait style, erect the iPad as a camera is upper, face the display to you, and stretch your arms loosely like you grab a steering wheel.
+<span class="s1"><br>
+</span>Then, the center part of the sign you drew is enlarged and showed on the display as fullscreen. </li>
+      <li class="li1">At the first,
+          it response to a inclination to right or left in realtime, the displayed part of the sign move.
+          So, if you tilt the iPad slowly to right, the displayed part move to the right edge of the sign.<br>
+          (We call this state "Async(Asynchronous) state".)</li>
+      <li class="li1">When you tilt a iPad over 10 degree,
+          at the corner of upper and tilted side, a mark of <img src="indicatorTopLeftOut.png" width="20"> or <img src="indicatorTopRightOut.png" width="20">
+              ("Corner Indicator"s) turn on.
+              <span class="s1"><br>
+</span>This time, this application recognize that the iPad was tilted enough to that direction, so, when the indicators turn on alternately, the application recognize the iPad swag round-trip, then record its elapsed time.
+              </li>
+      <li class="li1">For these round-trip elapsed time to satisfy 
+          requirements as follows, keep same tempo, check the corner indicators turn on alternately, and swing continuously.</li>
+      <ul class="ul1">
+        <li class="li1">A round-trip elapsed time of swing is between from 0.5 to 5.0 second. (24 to 240 BPM as one side）</li>
+        <li class="li1">About continuous tree round-trip,
+            every difference between each time of them and average time of them (tolerance) are within 30 percent.
+            </li>
+      </ul>
+      <li class="li1">For keeping a tempo constantly, you may swing it in time to the music.
+          <span class="s1"><br>
+</span>Playing the music by iPod built in the iPad, you can use this SwingSign simultaneously.<span class="s1"><br>
+</span>Or playing a metronome application on your iPhone/iPod Touch, you can swing to that beat note.</li>
+      <ul class="ul1">
+          <li class="li1">[Refer] Application of metronome:</li>
+          <ul class="ul1">
+              <li class="li2">Name：Metronome (free of charge)</li>
+              <li class="li1"><a href="http://itunes.apple.com/app/metronome/id287965434?mt=8" target="_blank">http://itunes.apple.com/app/metronome/id287965434?mt=8</a></li>
+          </ul>
+      </ul>
+      <li class="li1">
+          "Sync state"(describe details later) works in a tempo which range is as mentioned above.
+          But within that range, in too slow tempo, reading the sign takes time.
+          On the contrary, in too fast tempo, the sign is blurred and reading it is more difficult.<br>
+          So, in tempo of about 60 BPM as one side = about one time by one second, 
+          the displayed sign is easy to read. You may swing to the accompaniment of a second hand of a clock.<span class="s1"><br>
+</span>For a tune which tempo is over 120 BPM, reduce by half as swing to one side in 2 beat, then the sign will be easier to read.</li>
+      <li class="li1">Though a fan-shaped area which the sign show on is a track of swinging iPad, a radius of swing to its center (= center of iPad) is 50cm. About the width of swing, the track of the display is 30 degree for each side. So, a center of iPad body tilt 23 degree for each side.<span class="s1"><br>
+</span><img src="SwingWidth-E.gif"></li>
+      <li class="li1">As easy standard, the width of upper-side of swing is 60cm, that is about 5cm over from the breadth of your shoulders each side.<span class="s1"><br>
+</span>The Width of lower-side of fan-shaped area by swinging is about tree times as long as iPad short side length, so it is about your shoulder width.
+          <span class="s1"><br>
+</span>Length from top side of the display to a center of rotation of swing is 60cm, so, connecting lines both ends of upper-side of fan-shaped area and the center of rotation, it become an equilateral triangle, which each side length is 60cm.
+          <span class="s1"><br><br>
+</span><img src="60cmTriangle-E.gif"></li>
+        <li class="li1">When tempo of swing satisfy requirements as the above, a mark of "Sync" and a right arrow or a left arrow alternately turn on.
+            (These all together are called "Sync indicator")<br>
+            These show becoming "Sync(Synchronized) state".  
+            <span class="s1"><br><br>
+        </span><img src="syncMarkWithRightArrow.gif"> or <img src="syncMarkWithLeftArrow.gif"><br><br></li>
+      <li class="li1">In Sync state, using a angle which calculated from average tempo of latest tree round-trip swing, move a shown part of the sign. 
+          <br><img src="syncMarkWithRightArrow.gif" height="30"> show swinging from left edge to right direction as you face the display,
+          <img src="syncMarkWithLeftArrow.gif" height="30"> is its opposite direction.<br>
+          Adjust your temp to these arrow indicators, then tempo keeps constant, and the sign is seen as if it stood still in midair.</li>
+      <li class="li1">If the swing is improper, the sign is not seen stopping.
+          No good seen cases happened often and these causes and solutions are as follows. 
+          </li>
+      <ul class="ul1" style="list-style-type: lower-alpha">
+        <li class="li1">Showing sign flows opposite direction to your swing direction. It seems to see longer in vertical.
+            </li>
+        <ul class="ul1">
+          <li class="li1">=> Width of swing is narrow.<br>
+              Enlarge width of swing to 5cm outside of width of your shoulders.<span class="s1"><br>
+</span>Oppositely, the sign flows same direction as swing direction, width of swing is too wide, then narrow it.
+          </li>
+        </ul>
+        <li class="li1">Rotate letters of sign same direction as swing. If you swing right direction as you face the display, letters turn clockwise. Oppositely, swing left, letters turn counterclockwise.
+        </li>
+        <ul class="ul1">
+          <li class="li1">=> A radius of swing is short.<br> 
+              As the figure above, 
+              enlarge the radius until 3 points make an 60cm side equilateral triangle.</li>
+        </ul>
+        <li class="li1">The sign shakes side irregularly.
+            </li>
+        <ul class="ul1">
+          <li class="li1">=> The tempo (round-trip elapsed time) of swing is uneven.<br>
+              Adjust your temp to arrow indicators. Or swing it in time to the rhythm of music or a metronome.</li>
+        </ul>
+      </ul>
+      <li class="li1">Though you adjust your swing following the above solutions, if the sign seems to see moving, default values of adjust values to a time lag of sensor, a rate of stopping time at swing edges etc. may not fit your tendency of swing. <br>
+          These value can be changed in "Settings page", refer 
+          <a href="#display_setting">its "Explanations of Each Part"</a></li>
+      <li class="li1">When you will stop showing the sign, lay the iPad body horizontal as the display side become upper side. Then the display back to the design page. 
+          </li>
+      <li class="li1">If the latest round-trip elapsed time dose not satisfy requirements as the above, it return to Async state. 
+          <span class="s1"><br>
+</span>Similarly from Async state, if you lay the iPad, it back to the design page, too. </li>
+    </ul>
+    <li class="li1">Practice in Mirror Mode</li>
+    <ul class="ul1">
+      <li class="li1">Normally, in swigging time, the display faces to a person you show a sign. But in that condition, you can not check the situation of the display.<br>
+          So, limit in practice of swing and checking how the sign be shown, switch "In Mirror (Flip Horizontal)" turn to "On". Then, the sign image flips horizontal. Then you swing it faced to a large mirror, so it will be a mirror of mirror image = original image, you can check the real size swing sign image in same figure as you designed.</li>
+    </ul>
+    <li class="li1">Styles of Swing</li>
+    <ul class="ul1">
+      <li class="li1">There are 2 styles to swing  as follows.</li>
+      <ul class="ul1" style="list-style-type: lower-alpha">
+        <li class="li1">At the highest position by holding up hands</li>
+        <ul class="ul1">
+          <li class="li1">Hold both side of under part of iPad, hold up your hands, and swing it sides stretching out your arms. 
+              <span class="s1"><br>
+</span>Adjust a center of rotation of pendulum motion to your nose.
+              <span class="s1"><br>
+</span><img src="SwingPose_HandsUp.gif"><br><br></li>
+          <li class="li1">By this style, the sign is't hardly hidden by a crowd, and it's easy to attract attention, but keeping the style for long time tires your hands.
+              <span class="s1"><br>
+</span>By swinging with your head together, you can easily check indicators's situation.<span class="s1"><br>
+</span>Be careful not to hide views of an audience behind you.
+              </li>
+        </ul>
+        <li class="li1">At your breast hight</li>
+        <ul class="ul1">
+            <li class="li1">Hold both side of under part of iPad,
+                swing it as your hands at your breast hight.
+                Adjust a center of rotation of pendulum motion to your abdominal region
+                <span class="s1"><br>
+            </span><img src="SwingPose_FrontOfBust.gif"></li>
+          <li class="li1">
+              This style can use at a place where your front view is open, e.g. at the stairs-shaped stands seat.
+              <span class="s1"><br>
+</span>Your fatigue is less than the hold up position.</li>
+          <li class="li1">Be careful with the radius of rotation.
+              It tend to be short (= round track). 
+              It's better that you think to swing it straight horizontally.
+              </li>
+        </ul>
+      </ul>
+    </ul>
+    <li class="li1">Performance</li>
+    <ul class="ul1">
+      <li class="li1">Tern off <span class="s1">"</span>In Mirror (Flip Horizontal)" button.<span class="s1"><br>
+      </span></li>
+        <li class="li1">If there is any time to the performance you show it in, 
+            you may suspend this app by tapping home button, and use other app.
+            Afterward, tap the SwingSign icon from history list, you can see the sign again at the point you suspend. 
+            </li>
+      <li class="li1">In a case like follows, the sign you drew will be abandoned and the design area will be cleared.
+          </li>
+      <ul class="ul1">
+        <li class="li1">Delete the SwingSign icon in the history list.
+            </li>
+        <li class="li1">（by pressing and holding the Sleep button）Turn the iPad completely off, and turn it on.</li>
+      </ul>
+      <li class="li1">When the performance time has come, tap "Display" button, face the display toward the person you want to show, and start to swing it.</li>
+    </ul>
+    <li class="li1">Advanced Usage</li>
+    <ul class="ul1">
+      <li class="li1">When you get used to using this app, you become to able to swing properly without checking the Corner indicators nor the Sync indicator.
+          If you think these indicators are eyesores, you can these display always turn off or fade only In Sync.
+          <span class="s1"><br>
+</span>
+          <!--
+           And until some round-trip swing from beginning in Async state, you can turn off the sign which is seen moving if it were turn on, and from Sync state started, turn on the sign.
+          -->          
+          Moreover, you can set the appearance of the sign to that when in Async state, it turn off, and in Sync state, it turn on. 
+<span class="s1"><br>
+</span>By these settings, you can show naturally only "the sign that seem to see at a standstill".
+          <span class="s1"><br>
+          </span>Details of these settings, refer <a href="#display_setting">"Settings page" of "Explanations of Each Part"
+</a>.</li>
+    </ul>
+    <li class="li1">Suggestion When You Are Stand by</li>
+    <ul class="ul1">
+      <li class="li1">When you end swinging it, and back to the design page, you may touch and draw something in the sign area unconsciously.<br>
+          For to prevent it, press the Sleep button. Then it is locked.<span class="s1"><br>
+</span>If you drew something in the sign area unconsciously, tap the "Undo" button necessary times, then you can restore previous situation.</li>
+    </ul>
+  </ol>
+    <h2>
+        Explanations of Each Part
+    </h2>
+
+  <ol class="ol1">
+    <li class="li1">Design Page (Initial page from a boot up)</li>
+      <p>In this page, user draw a sign as you like.</P>
+    <ul class="ul1">
+      <li class="li1">Design area of a sign (a black fan-shaped area)</li>
+      <ul class="ul1">
+        <li class="li1">Draw lines connecting dragged points by selected colors, width of line, and styles.(See below for each detail)
+            </li>
+        <li class="li1">There is a limit that the number of strokes must be 100 or fewer.</li>
+      </ul>
+      <li class="li1">Pen Color</li>
+      <ul class="ul1">
+          <li class="li1">Touched color from 4 by 4 palette become a using color, and displayed it in a frame on the right of "Pen Color:" item.<span class="s1"><br>
+</span>Default setting is pink.</li>
+      </ul>
+      <li class="li3">Line Cap &amp; Join:</li>
+      <ul class="ul1">
+        <li class="li1"><span class="s1"></span>Select a shape of line ends and corners. Selected one is showed in a blue frame.<span class="s1"><br>
+</span>Default setting is both line ends and corners are round-shaped.</li>
+      </ul>
+      <li class="li1">Line Width:</li>
+      <ul class="ul1">
+        <li class="li1">Width of line of a sign.<span class="s1"><br>
+</span>Moving a slider on the right, change the width, and a real size line is showed in the frame on the left.</li>
+      </ul>
+      <li class="li1">In Mirror (Flip Horizontal):</li>
+      <ul class="ul1">
+        <li class="li1">Select On or Off "In Mirror" mode.<span class="s1"><br>
+</span>When you want to check the swing sign as real size and shape by your self, 
+            turn on this, and 
+            look at a reflection of the swing sign in the mirror,
+            then you can see the same sign as you designed.<span class="s1"><br>
+</span>Turn Off this switch whenever you modify the design.</li>
+      </ul>
+      <li class="li1">"Clear" Button</li>
+      <ul class="ul1">
+        <li class="li1">Delete everything (become all black) in the design area of a sign.<span class="s1"><br>
+</span>Be careful that after tapping this, you can not restore previous situation.</li>
+      </ul>
+      <li class="li1">"Undo" Button</li>
+      <ul class="ul1">
+        <li class="li1">Delete the last stroke.<br>
+            </span>You can trace back to its origins without any restriction
+.</li>
+      </ul>
+      <li class="li1">"Display" Button</li>
+      <ul class="ul1">
+        <li class="li1">For showing the swing sign, shift to "Display Enlarged Sign Page".</li>
+      </ul>
+      <li class="li1">Setting Button（gear-shaped）</li>
+      <ul class="ul1">
+        <li class="li1">Shift to "Settings Page" for setting and adjusting several items</li>
+      </ul>
+      <li class="li1">Help Button（"i" mark）</li>
+      <ul class="ul1">
+        <li class="li1">Show this page.</li>
+      </ul>
+    </ul>
+    <li class="li1">Display Enlarged Sign Page</li>
+<!--
+      <ul class="ul1">
+      <li class="li1">画面全体</li>
+      <ul class="ul1">
+        <li class="li1">
+ -->
+      <p>For to show the large virtual sign in midair, enlarge and display a part of the sign synchronizing your swig.<span class="s1"><br>
+</span>Use by portrait position. (The camera is top side.)<span class="s1"><br>
+</span>
+      At first, the visible portion of the sign move in real time according to the inclination of the body. (Asynchronous state).
+      <br>
+      <!--
+      </li>
+        <li class="li1">
+       -->
+      By continuing swing from side to side at regular intervals, 
+      shift to the Sync state, and move the portion of the enlarged sign adjusting to tempo of the swing, then, the sign seems to have stopped in midair.<br>
+      <!--
+      </li>
+        <li class="li1">
+       -->
+      To back to the Design Page, lay the iPad body horizontal as the display side become upper side. 
+      <!--
+      </li>
+      </ul>
+ -->
+      <ul class="ul1">
+      <li class="li1">Corner Indicator</li>
+      <ul class="ul1">
+        <li class="li1"><img src="indicatorTopLeftOut.png" width="20"> on the upper left corner, and <img src="indicatorTopRightOut.png" width="20"> on the upper right corner.</li>
+        <li class="li1">
+            Reacting in real time to the iPad inclination (input values of the acceleration sensors), 
+            the indicator of the corner on the inclined side lights when it inclines more than an enough angle (about ten degrees) to measure the round-trip elapsed time of the swing. <span class="s1"><br>
+</span>It is considered that it was swung round-trip once when these indicators light alternately with right and left both ends of the swing.<span class="s1"><br>
+</span></li>
+          <p>[!] You can set them "Always Off" or "Fade in Sync" too by settings.</p>
+      </ul>
+      <li class="li1">Sync Indicator</li>
+      <ul class="ul1">
+        <li class="li1">At the under center of the display, <img src="syncMarkWithRightArrow.gif" height="40"> or <img src="syncMarkWithLeftArrow.gif" height="40"></li>
+        <li class="li1">"Sync"</li>
+        <ul class="ul1">
+          <li class="li1">While this lights, it mean being in Sync state.<span class="s1"><br>
+</span>This turns on a light in three round-trip swings as possible.
+              <span class="s1"><br>
+</span>This doesn't turn on a light in five round-trip swings, the follows seem reasons.
+              <ul class="ul1">
+                  <li class="li1">The inclination of one or both ends of the swing is insufficient.</li>
+                  <li class="li1">The round-trip elapsed time is too long or too short.</li>
+                  <li class="li1">There is irregularity of the round-trip elapsed time in three continuous round-trip swings. </li>
+              </ul>
+          </li>
+        </ul>
+        <li class="li1">"-&gt;" or "&lt;-"</li>
+        <ul class="ul1">
+          <li class="li1">
+              This indicates a direction of the swing which
+              the inclination predicted by internal calculation is in now.<span class="s1"><br>
+</span>"-&gt;" show moving from left to right as you face the display. <span class="s1"><br>
+</span>"&lt;-" is a opposite direction.<span class="s1"><br>
+</span>Make sure that the timing of your swing matches the directions of these show, and adjust it.</li>
+        </ul>
+          <p>[!] You can set above tree indicators together to "Always Off" or "Fade in Sync" too by settings.
+              </p>
+      </ul>
+<!---        
+      <li class="li1">Returnボタン</li>
+      <ul class="ul1">
+        <li class="li1">このサイン拡大表示画面が表示されてから最初の数秒間、表示される。<span class="s1"><br>
+</span>その間にこのボタンにタッチすると、デザイン画面に戻る。<span class="s1"><br>
+</span>ボタンが消えた後でも画面のどこかにタッチすると再度表示され、数秒放置すると消える。</li>
+      </ul>
+ -->
+    </ul>
+      <a name="display_setting"></a>
+    <li class="li1">Settings Page</li>
+      <p>Adjust a timing to move the sign displayed, and set On/Off to display the indicators.<br>
+      These settings are stored even this app is stopped. (even it is shut down and rebooted.)</p>
+      <ul class="ul1">
+      <li class="li1">Sync Adjust</li>
+      <ul class="ul1">
+        <li class="li1">A value for revise a time lag from sensor input to calculation and display. [second]<span class="s1"><br>
+</span>It should be changed when there is a difference in the processing performance such as the first iPad and iPad2. <span class="s1"><br>
+</span>Adjust this if the whole sign seems to be always wavered.<span class="s1"><br>
+</span>If this value is too small, the image comes to the edge behind iPad has reached at the edge of swing. And when iPad began to move toward inside, the image still stop yet for a while. So the whole sign seems to be always wavered toward the opposite direction of swing.<span class="s1"><br>
+</span>On the contrary if it's too large, before the iPad reach at the edge of swing, a edge part of sign is displayed. And while iPad stop at the edge, the image begin to move. So, the whole sign seems to be always wavered toward the same direction of swing, that is toward outside.<span class="s1"><br>
+</span>Default value is 0.20[second] (for iPad2)</li>
+      </ul>
+      <li class="li1"><span class="s1"></span>Edge Rest Rate</li>
+      <ul class="ul1">
+        <li class="li1">About a round-trip swing, this is a ratio of elapsed time that iPad has stopped at the both edge of swing respectively.<span class="s1"><br>
+</span>This ratio seems to have the difference according to the individual variation and the tempo. <span class="s1"><br>
+</span>If a middle of the sign seem to stop, but both edges of the sign seem to move, adjust this value.<span class="s1"><br>
+</span>If this value is too small, the image comes to the edge behind iPad has reached at the edge of swing. And before you begin to move the iPad toward inside, the image begin to move. So the sign seem to be stop, but seem to be more wide than original, and to move with a start toward inside at the edges.<span class="s1"><br>
+</span>On the contrary if it's too large, before the iPad reach at the edge of swing, the image moved to a part of edge of the sign, then it seem to be dragged. And after you begin to move the iPad toward inside, the image stay yet, then the sign seem to be dragged inside. So, the middle part of the sign seem to stop, but the whole sign seem to be narrow horizontally, and only both edge parts seem to be wavered.<span class="s1"><br>
+</span>Default value is 0.04[%]</li>
+      </ul>
+      <li class="li1">Display Frequency</li>
+      <ul class="ul1">
+        <li class="li1">
+            The number of times per second that the display process.<span class="s1"><br>
+</span>The higher the number, the less blur the sign and the easier to read it even if you swing in up-tempo.<span class="s1"><br>
+</span>About iPad2, a process performance in a program is about 100 times per second or under, but if this set to 100 times, the sign seem to flick a little.<span class="s1"><br>
+</span>So, the default value is set to 60 times per second, in which it seem to see clearly without flicker.<span class="s1"><br>
+</span>Even if you set this to a number that is over a number of "(Previous Performance)" just bellow, an actual performance will be same as the number of "(Previous Performance)".<span class="s1"><br>
+</span>Therefore, even if a large value is set more than the ability, harmful seems to be few, but by setting a smaller value, the sign may be seen more clearly according as compatibility with the display function.</li>
+      </ul>
+      <li class="li1">(Previous Performance)</li>
+      <ul class="ul1">
+        <li class="li1">Mean value of display frequency per second which calculated from dividing display processing count at the last Display Enlarged Sign Page by the elapsed time. It's actual measurement value. <span class="s1"><br>
+</span>If you have not shifted to the Display Enlarged Sign Page even once after rebooting the app, displays "N / A" (means unknown).</li>
+      </ul>
+      <li class="li1">Display Sign In Async State</li>
+      <ul class="ul1">
+        <li class="li1">Just after shifted to the Display Enlarged Sign Page, while in Async state, display or not a part of the sign which response to the inclination in realtime.<span class="s1"><br>
+</span>If you get use to use the app, you can show the SwingSign well without displaying this async sign. So, If you don't want to show the sign which doesn't seem to stop yet, set this to "Off".<span class="s1"><br>
+</span>Default value is "On" (Display).</li>
+      </ul>
+      <li class="li1">Display Corner Indicator</li>
+      <ul class="ul1">
+        <li class="li1">Display or not the Corner Indicator at the both upper side corners of the Display Enlarged Sign Page.<span class="s1"><br>
+</span>"Off" means to not display any time in Async state nor in Sync state.<br>
+            "On" means to display always in both states.<br>
+            "Fade In Sync" means to do the fade-out in a few seconds after it become a Sync state and it become non-display though display in the Async State. <span class="s1"><br>
+</span>The corner indicators are visible from the person you show the sign.
+            Therefore, If you get use to use the app, by setting this to "Off" or "Fade In Sync", you can make the displayed sign more brief.</li>
+      </ul>
+      <li class="li1">Display Sync Indicator</li>
+      <ul class="ul1">
+        <li class="li1">Display or not a indicators set "&lt;- Sync -&gt;" which shown in Sync state.<span class="s1"><br>
+        </span>"Off" means to not display any time.<br>
+            "On" means to display in Sync state.<br>
+            "Fade In Sync" means to do the fade-out in a few seconds after it become a Sync state. <span class="s1"><br>
+            </span>Same as "Display Corner Indicator" above, by setting this to "Off" or "Fade In Sync", you can make the displayed sign more brief.</li>
+      </ul>
+      <li class="li1">"Reset All to Default" Button</li>
+      <ul class="ul1">
+          <li class="li1">Reset all items above in this page to default values.</li>
+      </ul>
+      <li class="li1">"Done" Button (at upper-left side in the title bar)</li>
+      <ul class="ul1">
+        <li class="li1">Store all setting effectively, and return to the Design Page.</li>
+      </ul>
+    </ul>
+    <li class="li1">Help Page</li>
+    <ul class="ul1">
+      <li class="li1">Show this manual and informations.</li>
+    </ul>
+    <ul class="ul1">
+        <li class="li1">"Link Back" Button (at upper-left side in the title bar)</li>
+        <ul class="ul1">
+            <li class="li1">Back to the previous page and position where you see before jumping by hyper-link.</li>
+        </ul>
+        <li class="li1">"Done" Button (at upper-right side in the title bar)</li>
+        <ul class="ul1">
+            <li class="li1">Return to a former page (the Design Page or Settings Page).</li>
+        </ul>
+    </ul>
+  </ol>
+</ol>
+<h2>
+Information
+</h2>
+  <ol class="ol1">
+    <ul class="ul1">
+      <li class="li1">SwingSign Ver 1.0</li>
+      <li class="li1">Support Information：</li>
+      <ul class="ul1">
+        <li class="li1"><a href="http://tomo3.sakura.ne.jp/swingsign/">http://tomo3.sakura.ne.jp/swingsign/</a></li>
+        <li class="li1">Twitter:</li>
+        <ul class="ul1">
+          <li class="li1">@info_swingsign</li>
+        </ul>
+      </ul>
+    </ul>
+  </ol>
+
+</body>
+</html>
