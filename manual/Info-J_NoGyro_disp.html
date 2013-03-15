@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>SwingSign(スウィングサイン）の使い方</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.36">
+<link rel="stylesheet" type="text/css" href="Info.css">
+</head>
+<body>
+    <h3>
+        サイン拡大表示画面（加速度センサー使用モードの場合）
+    </h3>
+      <p>加速度センサー使用モードでは、表示直後は、本体の傾きに合わせてリアルタイムにサインの表示部分が移動する。（非同期状態）<br>
+            一定間隔で左右に振り続けることにより、同期状態に遷移し、本体をスウィングするテンポに合わせてサインの拡大表示部分を移動し、空間に拡大したサインが停止しているように見える。<br>
+      表示を終えてデザイン画面に戻るには、iPad本体を画面を上にして水平にする。
+      <ul class="ul1">
+      <li class="li1">コーナーインジケーター</li>
+      <ul class="ul1">
+        <li class="li1">左上角の<img src="indicatorTopLeftOut.png" width="20">および右上角の<img src="indicatorTopRightOut.png" width="20"></li>
+        <li class="li1">本体傾き（加速度センサーの入力値）にリアルタイムに連動しスウィングの振幅時間を計測するために十分な角度（約10度）以上傾けると傾けた側の角のインジケーターが点灯する。<span class="s1"><br>
+</span>スウィングの左右両端とも交互にこれらのインジケーターが点灯すると往復したとみなされる。<span class="s1"><br>
+</span>これは同期・非同期の状態にかかわらず同じ意味で表示されるので、スウィングは常に、これが両端で交互に点灯するよう注意が必要。<br>
+	（※ただし設定により、「常に非表示」または「同期状態になったらフェードアウト」も可能）</li>
+      </ul>
+      <li class="li1">Syncインジケーター</li>
+      <ul class="ul1">
+        <li class="li1">画面下方中央の<img src="syncMarkWithRightArrow.gif" height="40">または <img src="syncMarkWithLeftArrow.gif" height="40"></li>
+        <li class="li1">"Sync"表示</li>
+        <ul class="ul1">
+          <li class="li1">点灯している間、同期（In Sync）状態にあることを示す。<span class="s1"><br>
+</span>最短で往復3回のスウィングでこれが点灯する。<span class="s1"><br>
+</span>5回以上往復してもこれが点かない場合は、スウィング両端の傾きが不十分、往復時間が規定より長すぎる、短すぎる、または連続3往復の長さにムラがあることが考えられる。</li>
+        </ul>
+        <li class="li1">"-&gt;"および"&lt;-"の表示</li>
+        <ul class="ul1">
+          <li class="li1">内部計算により予測された今の傾きがスウィングの両端のどちらからどちらへ本体を振っているかを表す。<span class="s1"><br>
+</span>"-&gt;"は画面に向かって左から右方向へ移動。<span class="s1"><br>
+</span>"&lt;-"はその逆。<span class="s1"><br>
+</span>この表示方向と自分のスイングが合っているか確認しタイミング調整する。</li>
+        </ul>
+      </ul>
+         <p>（※設定により、上記３つ合わせて「常に非表示」または「同期状態になったらフェードアウト」も可能）</p>
+    </ul>
+    <p style="text-align: center"><a href="javascript:history.back();"><戻る></a></p>
+</body>
+</html>
