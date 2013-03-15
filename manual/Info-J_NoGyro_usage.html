@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>SwingSign(スウィングサイン）の使い方（ジャイロセンサーが付いていない場合）</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.36">
+<!--
+  <style type="text/css">
+    body {background-color: #004f8e}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff; min-height: 18.0px}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'; color: #ffffff}
+    span.s1 {font: 12.0px 'Lucida Grande'}
+    span.s2 {text-decoration: line-through}
+    span.s3 {font: 12.0px 'Lucida Grande'; text-decoration: line-through}
+    ol.ol1 {list-style-type: decimal}
+    ul.ul1 {list-style-type: hyphen}
+  </style>
+-->
+<link rel="stylesheet" type="text/css" href="Info.css">
+</head>
+<body>
+<!--
+    <p class="p1">SwingSign　取説　下書き</p>
+<p class="p2"><br></p>
+<ol class="ol1">
+  <li class="li1">免責事項</li>
+ -->
+    <h2>
+        基本的な使い方（ジャイロセンサー未対応機種（初代iPad）の場合）
+    </h2>
+
+  <ol class="ol1">
+    <li class="li1">サインのスイング表示をテスト</li>
+      <p>ここではまず、動作原理と使い方を理解するために、iPadを目の前に画面を自分に向けて持ってスウィングする。これらが理解できたら、次の項目でiPadをひっくりかえして相手側に向けてスウィングする。</p>
+      <ul class="ul1">
+      <li class="li1">"Display"ボタンをタップし、縦位置に持ち替えてホームボタンが下側になるよう垂直に起こし、画面を自分に向け、腕を車のハンドルを握るくらい緩く前にのばす。<span class="s1"><br>
+</span>すると、今デザインしたサインの中央部が拡大されて全面表示になる。</li>
+      <li class="li1">最初は左右の傾きの角度にリアルタイムに反応して、サインの表示部分が移動する。すなわちゆっくり右に傾けていくと、扇形のサインの右端に向かって画面表示が移動していく。左に傾けるとサイン左端に向かって同様に。<br>
+          （これを「非同期状態」という）</li>
+      <li class="li1">片側に10度以上傾けると、画面の上辺の傾けた側の角に<img src="indicatorTopLeftOut.png" width="20">または<img src="indicatorTopRightOut.png" width="20">のマーク（コーナーインジケーター）が点灯する。<span class="s1"><br>
+</span>このとき、アプリではその側に十分傾いたものと認識し、左右のインディケーターが交互に点灯するとスウィングが1往復したものと見なし、その所要時間を記録する。</li>
+      <li class="li1">そのスウィング往復時間が以下の条件を満たすよう、なるべく同じテンポで左右のコーナーインジケーターが点灯することを確認しながらスウィングを繰り返す。</li>
+      <ul class="ul1">
+        <li class="li1">往復の時間が0.5～5.0秒(片側24～240拍(BPM)）の範囲</li>
+        <li class="li1">続く３往復がその平均とどれも±３０％の誤差以内</li>
+      </ul>
+      <li class="li1">スウィングのテンポを一定に保つには、テンポが一定の音楽のリズムに合わすとよい。<span class="s1"><br>
+</span>本体内蔵iPodで音楽を掛けた状態で同時にSwingSignを使うこともできる。<span class="s1"><br>
+</span>または、メトロノームのアプリを別途iPhoneかiPod Touchで起動してそれに合わせてもよい。</li>
+      <ul class="ul1">
+        <li class="li1">参考：メトロノームアプリ：</li>
+          <ul class="ul1">
+              <li class="li2">アプリ名：Metronome（無料）</li>
+              <li class="li1"><a href="http://itunes.apple.com/app/metronome/id287965434?mt=8" target="_blank">http://itunes.apple.com/app/metronome/id287965434?mt=8</a></li>
+          </ul>
+      </ul>
+      <li class="li1">テンポは上記範囲内で同期状態（後述）が機能するものの、遅すぎるとサイン全体を読みとるのに時間がかかり、速すぎると画像がブレて読みづらくなる。片側６０拍＝１秒に１回程度がサインを読みやすい。時計の秒針に合わせてスウィングしてもよい。<span class="s1"><br>
+</span>120拍以上の音楽に合わせる場合は２拍に１回と半減させてスウィングすると読みやすくなる。</li>
+      <li class="li1">サインを表示する扇型の領域は、iPadを持ってスウィング（＝振り子運動）したときの画面の軌跡であるが、その幅の中心（＝iPadの中心）までの振り子運動の半径は50cm。振り幅は画面領域の軌跡が左右30度づつ。よってiPad本体の中心は左右23度づつ傾ける。<span class="s1"><br>
+</span><img src="SwingWidth-J.gif"></li>
+      <li class="li1">わかりやすい目安としては、扇型のスウィングの幅は画面上端の左右が60cmで肩幅から5cmはみ出す程度。<span class="s1"><br>
+</span>画面下端はiPadの画面（枠は除く）の短い辺で３つくらいで、肩幅程度。<span class="s1"><br>
+</span>画面上端からスウィングの中心までも60cmなので、スウィングの上側両端と回転の中心を結ぶと一辺60cmの正三角形となる。<span class="s1"><br><br>
+</span><img src="60cmTriangle-J.gif"></li>
+        <li class="li1">スウィングのテンポが前述の同期の条件を満たすと、"Sync"のマークと左右のどちらかの矢印が交互に点灯し、「同期状態」になったことを表す。（これら合わせて「Syncインジケーター」と呼ぶ）<span class="s1"><br><br>
+        </span><img src="syncMarkWithRightArrow.gif">または <img src="syncMarkWithLeftArrow.gif"><br><br></li>
+      <li class="li1">同期状態では、直近3回のスウィングの平均のテンポで現時点の傾きを推測計算した角度を使って画面のサインの表示部分を移動する。<br>"-&gt; Sync" は、その推測角度が画面に向かって左端から右方向へスウィングしていることを表し、"Sync &lt;-" はその逆方向を表している。自分のスウィングをこの矢印の方向に合わせるように調整すると、テンポが一定に保たれ、空間に静止状態でサインが見える。</li>
+      <li class="li1">スウィングが不適切であると、サインが静止して見えない。よくあるサインの見え方と原因・対処は次のとおり。</li>
+      <ul class="ul1" style="list-style-type: lower-alpha">
+        <li class="li1">スウィングしている方向と逆方向にサインの表示が流れる。縦長に見える。</li>
+        <ul class="ul1">
+          <li class="li1">→スウィングの幅が狭い。肩幅より5cm外くらいまで、スウィングの幅を広げる。<span class="s1"><br>
+</span>逆にスウィングする方向にサインが流れる場合は、幅が広すぎなので狭める。</li>
+        </ul>
+        <li class="li1">スウィングしている回転方向にサインの文字が回転する。画面向かって右方向に動かしている場合は時計回り。左方向のときは反時計回り。</li>
+        <ul class="ul1">
+          <li class="li1">→扇型の回転半径が小さい。スウィングの上側両端と回転の中心を結ぶと一辺60cmの正三角形となるよう半径を大きくする。</li>
+        </ul>
+        <li class="li1">ランダムにサインが左右にぶれる。</li>
+        <ul class="ul1">
+          <li class="li1">→スウィングのテンポ（一往復の時間）にムラがある。Syncインジケータの左右に点灯する矢印に自分のスウィングを合わす。または、音楽やメトロノームのリズムに合わせてスウィングする。</li>
+        </ul>
+      </ul>
+      <li class="li1">上記でスウィングを調整してもサインが静止して見えない場合、傾きの推測計算に使われている、センサーとのズレ補正値、両端での停止時間の割合等の初期設定値が自分のスウィングのくせに合っていない可能性がある。これらは設定画面で調整できるので、<a href="Info-J.html#display_setting">その画面の「各部の説明」</a>を参照。</li>
+      <li class="li1">サインのスウィング表示を終えるときは、iPad本体を画面を上に水平にする。すると、デザイン画面に戻る。</li>
+      <li class="li1">加速度センサーによる最新の１往復が上記同期状態の条件を満たさなかった場合、非同期状態に戻る。<span class="s1"><br>
+</span>非同期状態からもiPad本体を画面を上に水平にすると、デザイン画面に戻る。</li>
+    </ul>
+    <li class="li1">ミラーモードでの練習</li>
+    <ul class="ul1">
+      <li class="li1">上記は概要を理解するため画面を自分に向けて行った。しかし、本来の使い方は、画面を相手に向けてスウィングする。そうすると、画面の状態がよくわからない。<span class="s1"><br>
+</span>そこで、相手から見たときの印象の確認とスウィングの練習のときに限り、「鏡面（左右反転）表示」のスイッチボタンを「オン」にする。すると、サインの左右が逆転した鏡像反転で表示されるので、これを大きな鏡に向かってスウィングすると、鏡像の鏡像 = 元画像、すなわち、デザインしたときと同じ形で、スウィング表示が実物大で確認できる。</li>
+    </ul>
+  </ol>
+    <p style="text-align: center"><a href="javascript:history.back();"><戻る></a></p>
+
+</body>
+</html>
