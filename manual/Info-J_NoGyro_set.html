@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>SwingSign(スウィングサイン）の使い方</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.36">
+<!--
+  <style type="text/css">
+    body {background-color: #004f8e}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff; min-height: 18.0px}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Kaku Gothic ProN'; color: #ffffff}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'; color: #ffffff}
+    span.s1 {font: 12.0px 'Lucida Grande'}
+    span.s2 {text-decoration: line-through}
+    span.s3 {font: 12.0px 'Lucida Grande'; text-decoration: line-through}
+    ol.ol1 {list-style-type: decimal}
+    ul.ul1 {list-style-type: hyphen}
+  </style>
+-->
+<link rel="stylesheet" type="text/css" href="Info.css">
+</head>
+<body>
+<!--
+    <p class="p1">SwingSign　取説　下書き</p>
+<p class="p2"><br></p>
+<ol class="ol1">
+  <li class="li1">免責事項</li>
+ -->
+    <h3>
+        サイン拡大表示画面（加速度センサー使用モードの場合）
+    </h3>
+      <p>加速度センサー使用モードでは、表示直後は、本体の傾きに合わせてリアルタイムにサインの表示部分が移動する。（非同期状態）<br>
+      <!--
+      </li>
+        <li class="li1">
+       -->
+            一定間隔で左右に振り続けることにより、同期状態に遷移し、本体をスウィングするテンポに合わせてサインの拡大表示部分を移動し、空間に拡大したサインが停止しているように見える。<br>
+      <!--
+      </li>
+        <li class="li1">
+       -->
+      表示を終えてデザイン画面に戻るには、iPad本体を画面を上にして水平にする。
+      <!--
+      </li>
+      </ul>
+ -->
+      <ul class="ul1">
+      <li class="li1">コーナーインジケーター</li>
+      <ul class="ul1">
+        <li class="li1">左上角の<img src="indicatorTopLeftOut.png" width="20">および右上角の<img src="indicatorTopRightOut.png" width="20"></li>
+        <li class="li1">本体傾き（加速度センサーの入力値）にリアルタイムに連動しスウィングの振幅時間を計測するために十分な角度（約10度）以上傾けると傾けた側の角のインジケーターが点灯する。<span class="s1"><br>
+</span>スウィングの左右両端とも交互にこれらのインジケーターが点灯すると往復したとみなされる。<span class="s1"><br>
+</span>これは同期・非同期の状態にかかわらず同じ意味で表示されるので、スウィングは常に、これが両端で交互に点灯するよう注意が必要。<br>
+	（※ただし設定により、「常に非表示」または「同期状態になったらフェードアウト」も可能）</li>
+      </ul>
+      <li class="li1">Syncインジケーター</li>
+      <ul class="ul1">
+        <li class="li1">画面下方中央の<img src="syncMarkWithRightArrow.gif" height="40">または <img src="syncMarkWithLeftArrow.gif" height="40"></li>
+        <li class="li1">"Sync"表示</li>
+        <ul class="ul1">
+          <li class="li1">点灯している間、同期（In Sync）状態にあることを示す。<span class="s1"><br>
+</span>最短で往復3回のスウィングでこれが点灯する。<span class="s1"><br>
+</span>5回以上往復してもこれが点かない場合は、スウィング両端の傾きが不十分、往復時間が規定より長すぎる、短すぎる、または連続3往復の長さにムラがあることが考えられる。</li>
+        </ul>
+        <li class="li1">"-&gt;"および"&lt;-"の表示</li>
+        <ul class="ul1">
+          <li class="li1">内部計算により予測された今の傾きがスウィングの両端のどちらからどちらへ本体を振っているかを表す。<span class="s1"><br>
+</span>"-&gt;"は画面に向かって左から右方向へ移動。<span class="s1"><br>
+</span>"&lt;-"はその逆。<span class="s1"><br>
+</span>この表示方向と自分のスイングが合っているか確認しタイミング調整する。</li>
+        </ul>
+      </ul>
+         <p>（※設定により、上記３つ合わせて「常に非表示」または「同期状態になったらフェードアウト」も可能）</p>
+<!---        
+      <li class="li1">Returnボタン</li>
+      <ul class="ul1">
+        <li class="li1">このサイン拡大表示画面が表示されてから最初の数秒間、表示される。<span class="s1"><br>
+</span>その間にこのボタンにタッチすると、デザイン画面に戻る。<span class="s1"><br>
+</span>ボタンが消えた後でも画面のどこかにタッチすると再度表示され、数秒放置すると消える。</li>
+      </ul>
+ -->
+    </ul>
+      <a name="display_setting"></a>
+    <li class="li1">設定画面</li>
+      <p>表示を動かすタイミングの調整やインジケータ類の表示のOn/Off設定を行う。<br>
+      これらの設定値は、アプリを終了しても（iPadの電源リセットでも）保存される。</p>
+      <ul class="ul1">
+      <li class="li1">Sync Adjust</li>
+      <ul class="ul1">
+        <li class="li1">センサー入力から計算・表示までの時間的なズレの補正値[秒]。<span class="s1"><br>
+</span>iPadとiPad2等、処理能力に差があると異なってくる。<span class="s1"><br>
+</span>サイン全体が常に揺れ動いている見える場合にこれを調整する。<span class="s1"><br>
+</span>この値が小さすぎると、iPadが端に到達してから画像が遅れてついてくる、およびiPadを内側に動かし始めても画像がしばらく止まっている。このため、サイン全体がスウィングしている方向の逆方向へ常に揺れ動いて見える。<span class="s1"><br>
+</span>逆に大きすぎると、端に到達する前に画像が端を表示し、到達して止まっている間に画像が動き出す。このため、サイン全体がスウィングしている方向、すなわち外側へ常にずれ動いて見える。<span class="s1"><br>
+</span>初期値 0.20[秒]（iPad2用）</li>
+      </ul>
+      <li class="li1"><span class="s1"></span>Edge Rest Rate</li>
+      <ul class="ul1">
+        <li class="li1">スウィング時、左右両端の各々でiPadが停止している時間（片側）の割合。<span class="s1"><br>
+</span>この比率は個人差やテンポによる違いがあると思われる。<span class="s1"><br>
+</span>サインの中央付近は静止して見えるが、両端が動いて見える場合にこれを調整する。<span class="s1"><br>
+</span>この値が小さすぎると、iPadが端に到達してから画像が遅れてついてくる、およびiPadを内側に動かし始める前に画像が動き始める。このため、サインの中央は停止しているものの、全体が横広がりに見え、端で内側へビクッとずれ動くように見える。<span class="s1"><br>
+</span>逆に大きすぎると、スウィングが端に達する前に画像が端の画像に動き終わって外へ引きずる、および内側に動かし始めても画像が止まったままで内側へ引きずる。このため、サインの中央は停止しているものの、全体の横が圧縮されて縦長に見え、端だけスウィングで振り回しているように見える。<span class="s1"><br>
+</span>初期値 0.04（４％）</li>
+      </ul>
+      <li class="li1">Display Frequency</li>
+      <ul class="ul1">
+        <li class="li1">1秒間に表示処理をする回数。<span class="s1"><br>
+</span>この回数が多いほど、速いテンポでスウィングしてもサインのぶれが少なくなり読みやすくなる。<span class="s1"><br>
+</span>iPad2ではプログラム上の処理能力はほぼ100回/秒まで可能だがこれを100回にすると表示のちらつきが感じられる。<span class="s1"><br>
+</span>よって初期設定では、ちらつきを感じず明瞭に見られる60回としている。<span class="s1"><br>
+</span>直下の"(Previous Perfomance)"で表示される実測の1秒間の表示回数を超えてこの項目を設定しても実質的にはPrevious Perfomanceの回数になる。<span class="s1"><br>
+</span>よって、能力以上に大きい値を設定しても害になることは少ないと思われるが、表示機能との相性で小さい値を設定したほうがサインが見えやすいものになる可能性もある。</li>
+      </ul>
+      <li class="li1">(Previous Performance)</li>
+      <ul class="ul1">
+        <li class="li1">前回のサイン拡大表示画面での表示処理回数を所要時間で割った1秒間の表示回数の平均値。実測値。<span class="s1"><br>
+</span>アプリ立ち上げ後1度もサイン拡大表示画面に移っていない場合は"N/A"（未定）と表示。</li>
+      </ul>
+      <li class="li1">Display Sign In Async State</li>
+      <ul class="ul1">
+        <li class="li1">サイン拡大表示画面に移って、非同期状態の時、傾きにリアルタイムに合わせて部分表示されるサインを表示するか否か。<span class="s1"><br>
+</span>使い方に慣れればこれは表示しなくても同期状態でサインをスウィング表示することができるので、まだ静止して見える状態でないサインを相手に見せたくないのであれば、これを「オフ」に設定する。<span class="s1"><br>
+</span>初期設定は「オン」（表示）。</li>
+      </ul>
+      <li class="li1">Display Corner Indicator</li>
+      <ul class="ul1">
+        <li class="li1">サイン拡大表示画面の上部の左右コーナーの傾きインジケーターを表示するか否か。<span class="s1"><br>
+</span>"Off"は非同期状態でも同期状態でも常に非表示。"On"はその両状態で常に表示。"Fade In Sync"は非同期状態では表示するが、同期状態になったときに、数秒のうちにフェードアウトして非表示になる。<span class="s1"><br>
+</span>コーナーインジケーターは相手側からも見えるものなので、使い方に慣れれば同期状態では非表示になるよう、"Off"または"Fade In Sync"に設定したほうが、サイン表示がより簡潔になる。</li>
+      </ul>
+      <li class="li1">Display Sync Indicator</li>
+      <ul class="ul1">
+        <li class="li1">同期状態になったことを表す"&lt;- Sync -&gt;"のインジケーターを表示するか否か。<span class="s1"><br>
+        </span>"Off"は常に非表示。"On"は同期状態にのみ表示。"Fade In Sync"は同期状態になったときに、数秒のうちにフェードアウトして非表示になる。<span class="s1"><br>
+        </span>コーナーインジケーター同様、使い方に慣れれば"Off"または"Fade In Sync"に設定したほうが、サイン表示がより簡潔になる。</li>
+      </ul>
+      <li class="li1">"Reset All to Default"ボタン</li>
+      <ul class="ul1">
+        <li class="li1">このウィンドウの上記すべての設定をプログラムで規定している初期値に戻す。</li>
+      </ul>
+      <li class="li1">「完了」ボタン（左上タイトルバー内）</li>
+      <ul class="ul1">
+        <li class="li1">設定の変更を有効にしてデザイン画面に戻る</li>
+      </ul>
+    </ul>
+    <li class="li1">ヘルプ画面</li>
+    <ul class="ul1">
+      <li class="li1">この取扱説明と案内情報の画面を表示する。</li>
+    </ul>
+    <ul class="ul1">
+        <li class="li1">"Link Back"ボタン（左上タイトルバー内）</li>
+        <ul class="ul1">
+            <li class="li1">当ヘルプ画面内でリンク移動する前の位置に戻る</li>
+        </ul>
+        <li class="li1">「完了」ボタン（右上タイトルバー内）</li>
+        <ul class="ul1">
+            <li class="li1">呼び出し元の画面（デザイン画面か設定画面）に戻る</li>
+        </ul>
+    </ul>
+  </ol>
+</ol>
+<h2>
+案内情報
+</h2>
+  <ol class="ol1">
+    <ul class="ul1">
+      <li class="li1">SwingSign Ver 2.0.alpha.1</li>
+      <li class="li1">サポート情報：</li>
+      <ul class="ul1">
+          <li class="li1"><a href="http://tomo3.sakura.ne.jp/swingsign/">http://tomo3.sakura.ne.jp/swingsign/</a></li>
+        <li class="li1">Twitter:</li>
+        <ul class="ul1">
+            <li class="li1">@info_swingsign</li>
+        </ul>
+      </ul>
+    </ul>
+  </ol>
+
+</body>
+</html>
